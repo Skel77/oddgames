@@ -19,34 +19,7 @@
         <h1 class="animated jello game_title">Odd Games</h1>
         <div id="links" class="animated fadeInLeft delay-1s games">
             <div class="game_title"><input placeholder="Search" id="search" class="search" onkeyup="search_it()" type="search"><select id="tags" class="button" onclick="search_it()"><option value="all">All</option><option value="pop">Popular</option><option value="two">Two Player</option><option value="stream">Streaming</option><option value="bad">Bad Games</option></select></div>
-            <h2 class="animated jello game_title">All Gamess:</h2><button>about:blank</button>
-    <script>
-      var urlObj = new window.URL(window.location.href);
-      var url = "https://oddmath.netlify.app/play/pokemonfirered";
-      if (url) {
-        var win;
- 
-        document.querySelector('button').onclick = function() {
-          if (win) {
-            win.focus();
-          } else {
-            win = window.open();
-            win.document.body.style.margin = '0';
-            win.document.body.style.height = '100vh';
-            var iframe = win.document.createElement('iframe');
-            iframe.style.border = 'none';
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
-            iframe.style.margin = '0';
-            iframe.src = url;
-            win.document.body.appendChild(iframe);
-          }
-          document.querySelector('button').style.bacground = 'grey';
-          document.querySelector('button').innerHTML = "Play Now";
-        };
-      }
- 
-    </script>
+            <h2 class="animated jello game_title">All Gamess:</h2>
             <a id="1 (2048 game)" class="link" href="./play/1/" target="_blank"><span class="bar"></span><img src="./icons/one.webp" alt="1 (2048 game)"><b>1 (2048 game)</b></a>
             <a id="100 Player Pong" class="glink" href="./play/100-player-pong/" target="_blank"><span class="bar"></span><img src="./icons/100pong.webp"><b>100 Player Pong</b></a>
             <a id="10 Minutes Till Dawn" class="link" href="./play/10-minutes-till-dawn/" target="_blank"><span class="bar"></span><img src="./icons/10m.webp"><b>10 Minutes Till Dawn</b></a>
